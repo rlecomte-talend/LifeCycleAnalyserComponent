@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d3b2e96-e190-42ef-ac0f-4d4f7d41256f" name="Default Changelist" comment="" />
+    <list default="true" id="8d3b2e96-e190-42ef-ac0f-4d4f7d41256f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/output/LifeCycleAnalysisOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/output/LifeCycleAnalysisOutputConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/service/LifeCycleAnalysisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/talend/components/lifecycle/output/Messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisPartitionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisPartitionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TALEND-INF/documentation.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TALEND-INF/scanning.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotless-resource-a5a5fdc0-31bc-4244-80ff-e0b164f7fb44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/talend-component-kit/icon-report.html" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/LifeCycleAnalyserComponent" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jV4cgWjv20fSz35WVZL5k0sIlc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

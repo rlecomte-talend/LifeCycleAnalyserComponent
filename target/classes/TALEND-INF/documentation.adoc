@@ -23,3 +23,25 @@ Input for life cycle analysis.
 
 //component_end:LifeCycleAnalysisInput
 
+//component_start:LifeCycleAnalysisOutput
+
+== LifeCycleAnalysisOutput
+
+Output.
+
+//configuration_start
+
+=== Configuration
+
+[cols="d,d,m,a,e,d",options="header"]
+|===
+|Display Name|Description|Default Value|Enabled If|Configuration Path|Configuration Type
+|configuration|Configuration for sink.|-|Always enabled|configuration|-
+|DataSet|DataSet.|-|Always enabled|configuration.dataSet|dataset
+|datastore|DataStore.|-|Always enabled|configuration.dataSet.datastore|datastore
+|===
+
+//configuration_end
+
+//component_end:LifeCycleAnalysisOutput
+

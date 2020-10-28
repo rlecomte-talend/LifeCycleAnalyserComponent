@@ -18,6 +18,7 @@ import java.util.Date;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+import org.talend.components.lifecycle.service.LifeCycleAnalysisService;
 import org.talend.sdk.component.api.input.Producer;
 import org.talend.sdk.component.api.record.Schema;
 import org.talend.sdk.component.api.service.record.RecordBuilderFactory;
@@ -32,6 +33,8 @@ public class LifeCycleAnalysisInput implements Serializable {
 
     protected final RecordBuilderFactory recordBuilderFactory;
 
+    protected final LifeCycleAnalysisService service;
+
     private transient int nbRecords = 0;
 
     private transient boolean limitRecords;
@@ -44,11 +47,13 @@ public class LifeCycleAnalysisInput implements Serializable {
 
     private transient String hostname;
 
-    public LifeCycleAnalysisInput(LifeCycleAnalysisInputConfiguration configuration, RecordBuilderFactory recordBuilderFactory) {
+    public LifeCycleAnalysisInput(LifeCycleAnalysisInputConfiguration configuration, RecordBuilderFactory recordBuilderFactory,
+            LifeCycleAnalysisService service) {
         log.info(this + " - constructor");
 
         this.configuration = configuration;
         this.recordBuilderFactory = recordBuilderFactory;
+        this.service = service;
     }
 
     @PostConstruct

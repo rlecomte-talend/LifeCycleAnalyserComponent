@@ -17,6 +17,7 @@ import java.util.stream.IntStream;
 import java.util.stream.StreamSupport;
 
 import org.talend.components.lifecycle.service.I18nMessage;
+import org.talend.components.lifecycle.service.LifeCycleAnalysisService;
 import org.talend.sdk.component.api.component.Icon;
 import org.talend.sdk.component.api.component.Version;
 import org.talend.sdk.component.api.input.Assessor;
@@ -40,15 +41,18 @@ public class LifeCycleAnalysisPartitionMapper implements Serializable {
 
     protected final RecordBuilderFactory recordBuilderFactory;
 
+    protected final LifeCycleAnalysisService service;
+
     protected final I18nMessage i18n;
 
     public LifeCycleAnalysisPartitionMapper(LifeCycleAnalysisInputConfiguration configuration,
-            RecordBuilderFactory recordBuilderFactory, I18nMessage i18n) {
+            RecordBuilderFactory recordBuilderFactory, LifeCycleAnalysisService service, I18nMessage i18n) {
         log.info(this + " - Constructor");
 
         this.configuration = configuration;
         this.recordBuilderFactory = recordBuilderFactory;
         this.i18n = i18n;
+        this.service = service;
     }
 
     @Assessor
@@ -62,7 +66,7 @@ public class LifeCycleAnalysisPartitionMapper implements Serializable {
         log.info(this + " - @Split");
 
         return IntStream.range(0, configuration.getSplits())
-                .mapToObj(i -> new LifeCycleAnalysisPartitionMapper(configuration, recordBuilderFactory, i18n))
+                .mapToObj(i -> new LifeCycleAnalysisPartitionMapper(configuration, recordBuilderFactory, service, i18n))
                 .collect(Collectors.toList());
     }
 
@@ -70,6 +74,6 @@ public class LifeCycleAnalysisPartitionMapper implements Serializable {
     public LifeCycleAnalysisInput createSource() {
         log.info(this + " - @Emitter");
 
-        return new LifeCycleAnalysisInput(configuration, recordBuilderFactory);
+        return new LifeCycleAnalysisInput(configuration, recordBuilderFactory, service);
     }
 }

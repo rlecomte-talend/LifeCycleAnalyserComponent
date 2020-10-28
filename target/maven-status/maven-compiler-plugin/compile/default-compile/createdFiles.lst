@@ -1,7 +1,10 @@
 org\talend\components\lifecycle\source\LifeCycleAnalysisPartitionMapper.class
 org\talend\components\lifecycle\datastore\LifeCycleAnalysisDatastore.class
-org\talend\components\lifecycle\source\LifeCycleAnalysisInput.class
 org\talend\components\lifecycle\package-info.class
 org\talend\components\lifecycle\source\LifeCycleAnalysisInputConfiguration.class
+org\talend\components\lifecycle\output\LifeCycleAnalysisOutputConfiguration.class
+org\talend\components\lifecycle\service\LifeCycleAnalysisService.class
+org\talend\components\lifecycle\output\LifeCycleAnalysisOutput.class
+org\talend\components\lifecycle\source\LifeCycleAnalysisInput.class
 org\talend\components\lifecycle\service\I18nMessage.class
 org\talend\components\lifecycle\dataset\LifeCycleAnalysisDataSet.class
