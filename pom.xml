@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.talend.components</groupId>
+        <artifactId>connectors-ee</artifactId>
+        <version>1.15.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>LifeCycleAnalyserComponent</artifactId>
+
+    <properties>
+        <talend.scan.scannedDependencies>org.talend.components:stream-api</talend.scan.scannedDependencies>
+        <validation.failOnInvalidExceptions>false</validation.failOnInvalidExceptions>
+    </properties>
+
+    <dependencies>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.version}</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <talend.component.junit.handler.state>static</talend.component.junit.handler.state>
+                        <talend.junit.beam.version>${beam.version}</talend.junit.beam.version>
+                        <validation.failOnInvalidExceptions>false</validation.failOnInvalidExceptions>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

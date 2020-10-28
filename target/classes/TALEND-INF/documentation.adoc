@@ -1,0 +1,25 @@
+//component_start:LifeCycleAnalysisInput
+
+== LifeCycleAnalysisInput
+
+Input for life cycle analysis.
+
+//configuration_start
+
+=== Configuration
+
+[cols="d,d,m,a,e,d",options="header"]
+|===
+|Display Name|Description|Default Value|Enabled If|Configuration Path|Configuration Type
+|configuration|Configuration for input.|-|Always enabled|configuration|-
+|DataSet|DataSet.|-|Always enabled|configuration.dataSet|dataset
+|datastore|DataStore.|-|Always enabled|configuration.dataSet.datastore|datastore
+|Max duration (s ; 0 = infinity)|Max duration of pipeline (seconds; 0 = no limit).|0|Always enabled|configuration.maxDuration|-
+|Records to generate per worker (0 = infinity)|Number of records to generate (0=infinity).|10|Always enabled|configuration.recordsToGenerate|-
+|Number of workers|Number of workers.|1|Always enabled|configuration.splits|-
+|===
+
+//configuration_end
+
+//component_end:LifeCycleAnalysisInput
+
