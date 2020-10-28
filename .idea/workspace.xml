@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d3b2e96-e190-42ef-ac0f-4d4f7d41256f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/output/LifeCycleAnalysisOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/output/LifeCycleAnalysisOutputConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/service/LifeCycleAnalysisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/talend/components/lifecycle/output/Messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisPartitionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/talend/components/lifecycle/source/LifeCycleAnalysisPartitionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TALEND-INF/documentation.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TALEND-INF/scanning.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spotless-resource-a5a5fdc0-31bc-4244-80ff-e0b164f7fb44.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/talend-component-kit/icon-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1603876005326</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added output and service">
+      <created>1603896507228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603896507228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added output and service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added output and service" />
   </component>
 </project>
