@@ -10,6 +10,8 @@
  */
 package org.talend.components.lifecycle.source;
 
+import java.io.Serializable;
+
 import org.talend.components.lifecycle.dataset.LifeCycleAnalysisDataSet;
 import org.talend.sdk.component.api.configuration.Option;
 import org.talend.sdk.component.api.configuration.ui.DefaultValue;
@@ -22,7 +24,7 @@ import lombok.Data;
 @Documentation("Configuration for input.")
 @GridLayout({ @GridLayout.Row("dataSet"), @GridLayout.Row("recordsToGenerate"), @GridLayout.Row("maxDuration"),
         @GridLayout.Row("splits") })
-public class LifeCycleAnalysisInputConfiguration {
+public class LifeCycleAnalysisInputConfiguration implements Serializable {
 
     @Option
     @Documentation("DataSet.")
@@ -35,7 +37,8 @@ public class LifeCycleAnalysisInputConfiguration {
 
     @Option
     @Documentation("Max duration of pipeline (seconds; 0 = no limit).")
-    private int maxDuration;
+    @DefaultValue("10")
+    private int maxDuration = 10;
 
     @Option
     @Documentation("Number of workers.")
