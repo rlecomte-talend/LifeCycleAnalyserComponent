@@ -8,7 +8,7 @@
         <version>1.15.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>LifeCycleAnalyserComponent</artifactId>
+    <artifactId>lifecycleanalyzer</artifactId>
 
     <properties>
         <talend.scan.scannedDependencies>org.talend.components:stream-api</talend.scan.scannedDependencies>
@@ -16,8 +16,11 @@
     </properties>
 
     <dependencies>
-
-
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbyclient</artifactId>
+            <version>10.14.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>

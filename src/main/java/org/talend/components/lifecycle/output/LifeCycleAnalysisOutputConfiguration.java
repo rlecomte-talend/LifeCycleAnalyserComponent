@@ -20,11 +20,15 @@ import org.talend.sdk.component.api.meta.Documentation;
 import lombok.Data;
 
 @Data
-@GridLayout(@GridLayout.Row("dataSet"))
+@GridLayout({ @GridLayout.Row("dataSet"), @GridLayout.Row("val") })
 @Documentation("Configuration for sink.")
 public class LifeCycleAnalysisOutputConfiguration implements Serializable {
 
     @Option
     @Documentation("DataSet.")
     private LifeCycleAnalysisDataSet dataSet;
+
+    @Option
+    @Documentation("Fixed field value.")
+    private String val;
 }

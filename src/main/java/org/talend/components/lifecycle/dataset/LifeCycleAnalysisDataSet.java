@@ -24,12 +24,24 @@ import lombok.Data;
 
 @DataSet("LifeCycleAnalysisDataSet")
 @Icon(Icon.IconType.STAR)
-@GridLayout({ @GridLayout.Row("datastore"), })
+@GridLayout({ @GridLayout.Row("datastore"), @GridLayout.Row("jdbcURL"), @GridLayout.Row("schema"), @GridLayout.Row("table") })
 @Data
 public class LifeCycleAnalysisDataSet implements Serializable {
 
     @Option
     @Documentation("DataStore.")
     private LifeCycleAnalysisDatastore datastore;
+
+    @Option
+    @Documentation("A jdbc URL to store logs.")
+    private String jdbcURL;
+
+    @Option
+    @Documentation("Table schema.")
+    private String schema;
+
+    @Option
+    @Documentation("Table name.")
+    private String table;
 
 }
