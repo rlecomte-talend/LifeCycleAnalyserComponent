@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2006-2020 Talend Inc. - www.talend.com
+ * Copyright (C) 2006-2021 Talend Inc. - www.talend.com
  *
  * This source code is available under agreement available at
  * %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -20,7 +20,7 @@ import org.talend.sdk.component.api.meta.Documentation;
 import lombok.Data;
 
 @Data
-@GridLayout({ @GridLayout.Row("dataSet"), @GridLayout.Row("val") })
+@GridLayout({ @GridLayout.Row("dataSet"), @GridLayout.Row("table"), @GridLayout.Row("val") })
 @Documentation("Configuration for sink.")
 public class LifeCycleAnalysisOutputConfiguration implements Serializable {
 
@@ -31,4 +31,8 @@ public class LifeCycleAnalysisOutputConfiguration implements Serializable {
     @Option
     @Documentation("Fixed field value.")
     private String val;
+
+    @Option
+    @Documentation("Table name.")
+    private String table;
 }
