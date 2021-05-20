@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2006-2020 Talend Inc. - www.talend.com
+ * Copyright (C) 2006-2021 Talend Inc. - www.talend.com
  *
  * This source code is available under agreement available at
  * %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -22,8 +22,8 @@ import lombok.Data;
 
 @Data
 @Documentation("Configuration for input.")
-@GridLayout({ @GridLayout.Row("dataSet"), @GridLayout.Row("recordsToGenerate"), @GridLayout.Row("maxDuration"),
-        @GridLayout.Row("splits") })
+@GridLayout({ @GridLayout.Row("dataSet"), @GridLayout.Row("table_mapper"), @GridLayout.Row("table_input"),
+        @GridLayout.Row("recordsToGenerate"), @GridLayout.Row("maxDuration"), @GridLayout.Row("splits") })
 public class LifeCycleAnalysisInputConfiguration implements Serializable {
 
     @Option
@@ -44,4 +44,16 @@ public class LifeCycleAnalysisInputConfiguration implements Serializable {
     @Documentation("Number of workers.")
     @DefaultValue("1")
     private int splits = 1;
+
+    @Option
+    @Documentation("Fixed field value.")
+    private String val;
+
+    @Option
+    @Documentation("Table name.")
+    private String table_input;
+
+    @Option
+    @Documentation("Table name.")
+    private String table_mapper;
 }

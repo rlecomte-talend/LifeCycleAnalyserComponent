@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2006-2020 Talend Inc. - www.talend.com
+ * Copyright (C) 2006-2021 Talend Inc. - www.talend.com
  *
  * This source code is available under agreement available at
  * %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -24,12 +24,20 @@ import lombok.Data;
 
 @DataSet("LifeCycleAnalysisDataSet")
 @Icon(Icon.IconType.STAR)
-@GridLayout({ @GridLayout.Row("datastore"), })
+@GridLayout({ @GridLayout.Row("datastore"), @GridLayout.Row("jdbcURL"), @GridLayout.Row("schema") })
 @Data
 public class LifeCycleAnalysisDataSet implements Serializable {
 
     @Option
     @Documentation("DataStore.")
     private LifeCycleAnalysisDatastore datastore;
+
+    @Option
+    @Documentation("A jdbc URL to store logs.")
+    private String jdbcURL;
+
+    @Option
+    @Documentation("Table schema.")
+    private String schema;
 
 }
